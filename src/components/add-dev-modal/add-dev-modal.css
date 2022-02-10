@@ -1,0 +1,82 @@
+.backdrop {
+	position: fixed;
+	inset: 0;
+	z-index: 1;
+	background: rgba(196, 196, 196, 0.53);
+}
+
+.add-dev-modal {
+	z-index: 2;
+	background: #ffffff;
+	padding: 50px 30px;
+	width: var(--add-dev-modal-width);
+	/* I could not find any other way to fit the whole modal on the screen */
+	height: 90vh;
+	max-height: var(--add-dev-modal-height);
+	overflow: auto;
+}
+
+.add-dev-modal header {
+	font-size: 32px;
+	padding-bottom: 50px;
+	border-bottom: 2px solid #d0cde1;
+}
+
+.add-dev-modal form {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding: 50px 50px 0;
+}
+
+.add-dev-modal form .form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.add-dev-modal form .form-group label {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.add-dev-modal form .form-group label .image-container {
+	width: 30px;
+	height: 30px;
+}
+
+.add-dev-modal form .form-group input {
+	border: 1px solid #d0cde1;
+	border-radius: 10px;
+	width: 600px;
+	height: 50px;
+	font-size: 24px;
+	padding: 0 15px;
+}
+
+.add-dev-modal form footer {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: 70px;
+	border-top: 2px solid #d0cde1;
+}
+
+.add-dev-modal form .buttons {
+	font-size: 24px;
+	padding-top: 50px;
+}
+
+.add-dev-modal form .buttons button {
+	width: 175px;
+	height: 50px;
+	border-radius: 15px;
+}
+
+.add-dev-modal form .buttons .primary-button {
+	background: #7c639f;
+	color: #ffffff;
+}

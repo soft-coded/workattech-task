@@ -2,6 +2,7 @@ import PageWithHeader from "../../components/page-with-header";
 import "./home.css";
 import SearchBar from "../../components/search-bar";
 import ResultsGrid from "../../components/results-grid";
+import AddDevModal from "../../components/add-dev-modal";
 
 const searchResults = [
 	{ id: 1, name: "test 1" },
@@ -19,6 +20,7 @@ const searchResults = [
 export default function Home() {
 	return (
 		<PageWithHeader>
+			<AddDevModal />
 			<SearchBar />
 			<ResultsGrid results={searchResults} />
 			<div className="flex-center could-not-find">
