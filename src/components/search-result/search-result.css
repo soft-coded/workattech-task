@@ -14,7 +14,7 @@
 }
 
 .search-result .avatar {
-	width: 100px;
-	height: 100px;
+	width: var(--avatar-size, 100px);
+	height: var(--avatar-size, 100px);
 	fill: #7c639f;
 }

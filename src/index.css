@@ -6,6 +6,15 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--header-height: 600px;
+	--footer-height: 80px;
+	--container-margin: 50px;
+	--avatar-size: 100px;
+	--search-icon-size: 50px;
+	--search-input-width: 700px;
+}
+
 html,
 body {
 	overflow-x: hidden;

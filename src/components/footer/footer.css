@@ -4,7 +4,7 @@
 	color: #ffffff;
 	fill: #ffffff;
 	background: #3f3d56;
-	height: 80px;
+	height: var(--footer-height, 80px);
 }
 
 .app-footer h4 {
