@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import PageWithHeader from "../../components/page-with-header";
 import "./home.css";
 import SearchBar from "../../components/search-bar";
@@ -18,16 +20,23 @@ const searchResults = [
 ];
 
 export default function Home() {
+	const [showModal, setShowModal] = useState(false);
+
 	return (
 		<PageWithHeader>
-			<AddDevModal />
+			{showModal && <AddDevModal setShowModal={setShowModal} />}
 			<SearchBar />
 			<ResultsGrid results={searchResults} />
 			<div className="flex-center could-not-find">
 				<h3>Could not find what you were looking for?</h3>
 			</div>
 			<div className="flex-center">
-				<button className="flex-center add-info">Add developer info</button>
+				<button
+					className="flex-center add-info"
+					onClick={() => setShowModal(true)}
+				>
+					Add developer info
+				</button>
 			</div>
 		</PageWithHeader>
 	);

@@ -6,10 +6,10 @@ import hackerrankLogo from "../../assets/profile-icons/hackerrank.png";
 import twitterLogo from "../../assets/profile-icons/twitter.png";
 import mediumLogo from "../../assets/profile-icons/medium.png";
 
-export default function AddDevModal() {
+export default function AddDevModal({ setShowModal }) {
 	return (
 		<>
-			<div className="backdrop" />
+			<div className="backdrop" onClick={() => setShowModal(false)} />
 			<div className="fixed-center add-dev-modal">
 				<header>
 					<h4>Add developer profile</h4>
@@ -81,7 +81,11 @@ export default function AddDevModal() {
 					</div>
 					<footer>
 						<div className="buttons">
-							<button type="button" className="secondary-button">
+							<button
+								type="reset"
+								className="secondary-button"
+								onClick={() => setShowModal(false)}
+							>
 								Cancel
 							</button>
 							<button type="submit" className="primary-button">
