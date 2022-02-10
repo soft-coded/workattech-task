@@ -15,7 +15,7 @@
 .app-description {
 	font-size: 56px;
 	padding: 50px 0;
-	margin: 0 50px 50px;
+	margin-bottom: 50px;
 	border-bottom: 2px solid #d0cde1;
 	color: #3f3d56;
 }

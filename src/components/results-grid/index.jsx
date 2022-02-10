@@ -3,7 +3,7 @@ import SearchResult from "../search-result";
 
 export default function ResultsGrid({ results }) {
 	return (
-		<div className="results-grid">
+		<div className="app-container results-grid">
 			{results.map(result => (
 				<SearchResult key={result.id} {...result} />
 			))}

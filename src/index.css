@@ -55,6 +55,10 @@ input {
 	outline: none;
 }
 
+.app-container {
+	margin: 0 50px;
+}
+
 .clickable {
 	user-select: none;
 	cursor: pointer;

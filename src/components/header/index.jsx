@@ -13,7 +13,7 @@ export default function Header() {
 					<img src={headerImage} alt="header" />
 				</div>
 			</header>
-			<div className="flex-center app-description">
+			<div className="flex-center app-container app-description">
 				<h2>Explore developer profiles</h2>
 			</div>
 		</>
