@@ -1,0 +1,20 @@
+.search-result {
+	gap: 50px;
+	font-size: 36px;
+	color: #9f8e63;
+}
+
+.search-result h4 {
+	gap: 20px;
+	font-weight: 400;
+}
+
+.search-result h4 svg {
+	fill: #0768fa;
+}
+
+.search-result .avatar {
+	width: 100px;
+	height: 100px;
+	fill: #7c639f;
+}

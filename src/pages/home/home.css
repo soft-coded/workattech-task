@@ -1,0 +1,16 @@
+.could-not-find {
+	font-size: 36px;
+	margin-bottom: 50px;
+	font-weight: 600;
+	color: #3f3d56;
+}
+
+.add-info {
+	height: 80px;
+	padding: 0 72px;
+	font-size: 36px;
+	background: #7c639f;
+	color: #ffffff;
+	border-radius: 15px;
+	margin-bottom: 50px;
+}

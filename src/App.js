@@ -1,11 +1,11 @@
-import Header from "./components/header";
-import SearchBar from "./components/search-bar";
+import Footer from "./components/footer";
+import Home from "./pages/home";
 
 export default function App() {
 	return (
 		<main>
-			<Header />
-			<SearchBar />
+			<Home />
+			<Footer />
 		</main>
 	);
 }
