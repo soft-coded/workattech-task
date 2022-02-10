@@ -1,0 +1,26 @@
+.app-search-bar {
+	display: flex;
+	align-items: center;
+	background: #d0cde1;
+	padding: 10px;
+	padding-right: 20px;
+	gap: 20px;
+	border-radius: 15px;
+	font-size: 24px;
+	height: 80px;
+}
+
+.app-search-bar input {
+	font-size: 24px;
+	border-radius: 15px;
+	background: #ffffff;
+	color: #d0cde1;
+	width: 700px;
+	height: 100%;
+	padding: 0 28px;
+}
+
+.app-search-bar .search-icon {
+	width: 50px;
+	height: 50px;
+}
