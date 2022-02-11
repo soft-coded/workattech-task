@@ -104,7 +104,9 @@
 	color: #0768fa;
 }
 
-.profile-page .repositories .repo .title svg {
+.profile-page .repositories .repo .title a {
+	display: flex;
+	align-items: center;
 	fill: #0768fa;
 	margin-left: 5px;
 }

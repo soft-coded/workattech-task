@@ -10,10 +10,14 @@ import { getAllDevs } from "../../api";
 
 export default function Home() {
 	const [showModal, setShowModal] = useState(false);
+	const [allDevs, setAllDevs] = useState(null);
 	const [results, setResults] = useState(null);
+	const [query, setQuery] = useState("");
 
 	const fetchAllDevs = useCallback(async () => {
-		setResults((await getAllDevs()).data);
+		const res = (await getAllDevs()).data;
+		setAllDevs(res);
+		setResults(res);
 	}, []);
 
 	useEffect(() => {
@@ -25,10 +29,15 @@ export default function Home() {
 			{showModal && (
 				<AddDevModal setShowModal={setShowModal} fetchAllDevs={fetchAllDevs} />
 			)}
-			<SearchBar />
+			<SearchBar
+				query={query}
+				setQuery={setQuery}
+				setResults={setResults}
+				allDevs={allDevs}
+			/>
 			{!results ? (
 				<LoadingSpinner />
-			) : results.length === 0 ? (
+			) : allDevs.length === 0 ? (
 				<div className="flex-center no-devs">No developers added yet</div>
 			) : (
 				<>

@@ -1,10 +1,21 @@
 import "./search-bar.css";
 
-export default function SearchBar() {
+export default function SearchBar({ query, setQuery, setResults, allDevs }) {
+	function findMatches(searched) {
+		setQuery(searched);
+		const regex = new RegExp(searched, "ig");
+		setResults(allDevs.filter(dev => regex.test(dev.id)));
+	}
+
 	return (
 		<div className="flex-center">
 			<div className="app-search-bar">
-				<input type="text" placeholder="Search for username" />
+				<input
+					type="text"
+					placeholder="Search for username"
+					value={query}
+					onChange={e => findMatches(e.target.value)}
+				/>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					height="24"
