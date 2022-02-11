@@ -8,6 +8,12 @@ const apiClient = axios.create({
 	timeout
 });
 
+apiClient.interceptors.response.use(undefined, err => {
+	return Promise.reject(
+		err.response?.data || { message: "Something went wrong" }
+	);
+});
+
 export const getAllDevs = () => apiClient.get("/developers");
 
 export const getOneDev = id => apiClient.get("/developers/" + id);

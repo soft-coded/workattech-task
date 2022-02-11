@@ -22,6 +22,13 @@
 	border-bottom: 2px solid #d0cde1;
 }
 
+.add-dev-modal .form-error {
+	color: red;
+	font-size: 24px;
+	font-weight: 600;
+	margin-top: 30px;
+}
+
 .add-dev-modal form {
 	display: flex;
 	flex-direction: column;

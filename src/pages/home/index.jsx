@@ -22,7 +22,9 @@ export default function Home() {
 
 	return (
 		<PageWithHeader>
-			{showModal && <AddDevModal setShowModal={setShowModal} />}
+			{showModal && (
+				<AddDevModal setShowModal={setShowModal} fetchAllDevs={fetchAllDevs} />
+			)}
 			<SearchBar />
 			{!results ? (
 				<LoadingSpinner />

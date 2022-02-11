@@ -18,3 +18,7 @@
 	height: var(--avatar-size, 100px);
 	fill: #7c639f;
 }
+
+.search-result .avatar.avatar-img {
+	border-radius: 50%;
+}
