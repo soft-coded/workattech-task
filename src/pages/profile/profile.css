@@ -15,6 +15,13 @@
 	color: #ffffff;
 }
 
+.profile-page .error {
+	font-size: 24px;
+	font-weight: 700;
+	color: red;
+	margin: 20px 0;
+}
+
 .profile-page .content {
 	padding: 100px 150px;
 	gap: 30px;
@@ -25,6 +32,11 @@
 	width: 400px;
 	height: 400px;
 	fill: #7c639f;
+}
+
+.profile-page .content .avatar.avatar-img {
+	border-radius: 50%;
+	overflow: hidden;
 }
 
 .profile-page .content .user-description {
@@ -38,8 +50,6 @@
 }
 
 .profile-page .content .user-description p {
-	display: flex;
-	flex-direction: column;
 	font-size: 24px;
 }
 
