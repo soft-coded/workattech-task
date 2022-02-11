@@ -19,3 +19,29 @@
 	border-bottom: 2px solid #d0cde1;
 	color: #3f3d56;
 }
+
+@media (max-width: 600px) {
+	.app-header {
+		flex-direction: column-reverse;
+		font-size: 36px;
+		text-align: center;
+		padding: 30px 10px;
+		gap: 50px;
+		height: unset;
+	}
+
+	.app-header h1 {
+		font-weight: 400;
+	}
+
+	.app-description {
+		font-size: 20px;
+		text-align: center;
+		padding: 20px 0;
+		margin: 0 10px 20px;
+	}
+
+	.app-description h2 {
+		font-weight: 600;
+	}
+}

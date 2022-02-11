@@ -121,3 +121,6 @@
 	font-size: 32px;
 	line-height: 44px;
 }
+
+@media (max-width: 600px) {
+}

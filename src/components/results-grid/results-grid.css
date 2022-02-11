@@ -7,3 +7,11 @@
 	margin-bottom: 50px;
 	border-bottom: 2px solid #d0cde1;
 }
+
+@media (max-width: 600px) {
+	.results-grid {
+		gap: 18px;
+		padding-bottom: 30px;
+		margin: 0 10px 30px;
+	}
+}

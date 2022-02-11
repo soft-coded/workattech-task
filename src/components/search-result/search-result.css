@@ -22,3 +22,23 @@
 .search-result .avatar.avatar-img {
 	border-radius: 50%;
 }
+
+@media (max-width: 600px) {
+	.search-result {
+		gap: 5px;
+		font-size: 12px;
+	}
+
+	.search-result .avatar {
+		--avatar-size: 20px;
+	}
+
+	.search-result h4 {
+		gap: 5px;
+	}
+
+	.search-result h4 svg {
+		height: 6px;
+		width: 6px;
+	}
+}

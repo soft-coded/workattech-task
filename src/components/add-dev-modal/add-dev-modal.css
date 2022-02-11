@@ -87,3 +87,50 @@
 	background: #7c639f;
 	color: #ffffff;
 }
+
+@media (max-width: 600px) {
+	.add-dev-modal {
+		width: 90vw;
+		padding: 20px;
+	}
+
+	.add-dev-modal header {
+		font-size: 16px;
+		padding-bottom: 20px;
+	}
+
+	.add-dev-modal .form-error {
+		font-size: 16px;
+	}
+
+	.add-dev-modal form {
+		padding: 20px 0;
+	}
+
+	.add-dev-modal form .form-group {
+		font-size: 16px;
+	}
+
+	.add-dev-modal form .form-group input {
+		font-size: 16px;
+		height: unset;
+		width: 100%;
+		padding: 5px 10px;
+	}
+
+	.add-dev-modal form footer {
+		margin-top: 20px;
+	}
+
+	.add-dev-modal form .buttons {
+		padding-top: 20px;
+		font-size: 16px;
+	}
+
+	.add-dev-modal form .buttons button {
+		width: unset;
+		height: unset;
+		padding: 10px 20px;
+		border-radius: 5px;
+	}
+}

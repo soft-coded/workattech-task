@@ -10,3 +10,15 @@
 .app-footer h4 {
 	font-weight: 600;
 }
+
+@media (max-width: 600px) {
+	.app-footer {
+		--footer-height: 50px;
+		font-size: 6px;
+	}
+
+	.app-footer svg {
+		width: 6px;
+		height: 6px;
+	}
+}

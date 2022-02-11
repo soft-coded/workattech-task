@@ -25,3 +25,19 @@
 	width: var(--search-icon-size, 50px);
 	height: var(--search-icon-size, 50px);
 }
+
+@media (max-width: 600px) {
+	.app-search-bar {
+		--search-input-width: 240px;
+		--search-icon-size: 20px;
+		height: 30px;
+		padding: 4px 6px;
+		gap: 5px;
+		margin-bottom: 30px;
+	}
+
+	.app-search-bar input {
+		font-size: 12px;
+		padding: 0 10px;
+	}
+}
