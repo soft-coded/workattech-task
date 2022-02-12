@@ -11,3 +11,6 @@ My submission for the assigned task. Kindly keep a few things in mind:
 - React v17
 - React router v6
 - Axios for API integration
+
+## Deploys
+- Deployed at netlify [here.](https://sc-workattech-task.netlify.app/)
