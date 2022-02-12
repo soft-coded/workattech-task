@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const baseURL = process.env.REACT_APP_SERVER_URL || "http://localhost:5000/api";
+export const baseURL =
+	process.env.REACT_APP_SERVER_URL || "http://localhost:5000/api";
 const timeout = 15000; // 15s
 
 const apiClient = axios.create({
