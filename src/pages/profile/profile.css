@@ -123,4 +123,91 @@
 }
 
 @media (max-width: 600px) {
+	.profile-page header {
+		font-size: 16px;
+		padding: 0 20px;
+		height: 50px;
+	}
+
+	.profile-page .content {
+		flex-direction: column;
+		gap: 10px;
+		padding: 40px 10px;
+		text-align: center;
+	}
+
+	.profile-page .content .avatar {
+		width: 100px;
+		height: 100px;
+	}
+
+	.profile-page .content .user-description {
+		gap: 0;
+		width: 100%;
+	}
+
+	.profile-page .content .user-description h2 {
+		font-size: 24px;
+		font-weight: 600;
+	}
+
+	.profile-page .content .user-description p {
+		font-size: 12px;
+		margin-bottom: 20px;
+	}
+
+	.profile-page .content .user-description .icons {
+		width: 100%;
+		justify-content: space-between;
+		padding: 0 20px;
+		margin-bottom: 20px;
+	}
+
+	.profile-page .content .user-description .icons svg,
+	.profile-page .content .user-description .icons img {
+		width: 18px;
+		height: 18px;
+	}
+
+	.profile-page .content .user-description .quick-info {
+		justify-content: space-evenly;
+		font-size: 16px;
+	}
+
+	.profile-page .content .user-description .quick-info svg {
+		width: 16px;
+		height: 16px;
+	}
+
+	.profile-page .repositories {
+		margin-top: 20px;
+		padding: 0 20px;
+	}
+
+	.profile-page .repositories h1 {
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+
+	.profile-page .repositories .repo {
+		padding: 20px;
+	}
+
+	.profile-page .repositories .repo .title h3 {
+		font-size: 16px;
+	}
+
+	.profile-page .repositories .repo .title a {
+		width: 16px;
+		height: 16px;
+	}
+
+	.profile-page .repositories .repo .title p {
+		font-size: 12px;
+	}
+
+	.profile-page .repositories .repo .description {
+		font-size: 14px;
+		line-height: 24px;
+	}
 }
