@@ -12,5 +12,6 @@ My submission for the assigned task. Kindly keep a few things in mind:
 - React router v6
 - Axios for API integration
 
-## Deploys
-- Deployed at netlify [here.](https://sc-workattech-task.netlify.app/)
+## Links
+- Deployed on netlify [here.](https://sc-workattech-task.netlify.app/)
+- [Backend repository](https://github.com/soft-coded/workattech-task-server), hosted on heroku.
